@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/client": "^4.0.1",
+    "axios": "^1.2.5",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-google-login": "^5.2.2",
+    "react-icons": "^4.7.1",
+    "uuidv4": "^6.2.13",
+    "zustand": "^4.3.2"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
