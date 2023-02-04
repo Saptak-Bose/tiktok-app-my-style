@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isSSR, setIsSSR] = useState(true);
@@ -15,24 +16,28 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   if (isSSR) return null;
 
   return (
-    <div>
-      <Head>
-        <title>Make Your Day - TikTok</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <GoogleOAuthProvider
+      clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}
+    >
       <div>
-        <Navbar />
-        <div className="flex gap-6 md:gap-20">
-          <div className="h-[92vh] overflow-hidden xl:hover:overflow-auto">
-            <Sidebar />
-          </div>
-          <div className="mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1">
-            <Component {...pageProps} />
+        <Head>
+          <title>Make Your Day - TikTok</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <div>
+          <Navbar />
+          <div className="flex gap-6 md:gap-20">
+            <div className="h-[92vh] overflow-hidden xl:hover:overflow-auto">
+              <Sidebar />
+            </div>
+            <div className="mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1">
+              <Component {...pageProps} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </GoogleOAuthProvider>
   );
 };
 

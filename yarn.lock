@@ -93,6 +93,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react-oauth/google@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@react-oauth/google/-/google-0.6.1.tgz#2a4c0f2a2f55988e94e2b6efa4f82c8f3ae154f8"
+  integrity sha512-Nq4OK/NTgnvl2dTgQW5H8O1bhLg4JRQhwkEzpfZNKA1ijByQk6X4XG1FGS49FIHjjKInb263Me/yVQ2F3LJeuw==
+
 "@sanity/client@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@sanity/client/-/client-4.0.1.tgz#21da3d625f76ca80e86d8f1a177b70a89514b86e"
@@ -559,6 +564,11 @@ isarray@~1.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+jwt-decode@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
+  integrity sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==
 
 lilconfig@^2.0.5, lilconfig@^2.0.6:
   version "2.0.6"

@@ -1,3 +1,4 @@
+import React from "react";
 import type { GetServerSideProps } from "next";
 import axios from "axios";
 import { Video } from "../types";
